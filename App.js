@@ -19,11 +19,13 @@ import {
   Image,
 } from 'react-native';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
+import Todoes from './comonents/todoes';
 
 const App = () => {
   return (
     <SafeAreaView>
       <View>
+        <Todoes />
          <Image style={[styles.imagecss]} source={require('./images/whatis.png')}/>
         <Text style={[styles.text]}>Login</Text>
         <TextInput
