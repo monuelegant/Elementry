@@ -16,6 +16,7 @@ import {
   TouchableOpacity,
   Button,
   SafeAreaView,
+  Image,
 } from 'react-native';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 
@@ -23,6 +24,7 @@ const App = () => {
   return (
     <SafeAreaView>
       <View>
+         <Image style={[styles.imagecss]} source={require('./images/whatis.png')}/>
         <Text style={[styles.text]}>Login</Text>
         <TextInput
           style={[styles.textcontaine]}
@@ -54,7 +56,7 @@ const App = () => {
 const styles = StyleSheet.create({
   text: {
     marginLeft: 20,
-    marginTop: 300,
+    marginTop: 30,
     fontSize: 20,
     textAlign: 'center',
   },
@@ -91,6 +93,12 @@ fontWeight: '700'
   },
   TouchableOpacity:{
    backgroundColor: 'AD40AF'
+  },
+  imagecss:{
+    margin:30,
+   width:350,
+   textAlign:'center',
+   height:300,
   }
 });
 
